@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <parent>
+        <groupId>{{groupId}}</groupId>
+        <artifactId>{{artifactId}}</artifactId>
+        <version>{{version}}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>{{artifactId}}-service</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>{{groupId}}</groupId>
+            <artifactId>{{artifactId}}-model</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+</project>
